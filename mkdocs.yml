@@ -1,0 +1,48 @@
+site_name: Jens Ackermann – Portfolio
+site_description: Persönliches Portfolio von Jens Ackermann – Technical Writer & Information Architect
+site_author: Jens
+
+theme:
+  name: material
+  features:
+    - content.image
+    - content.lightbox      
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - In aller Kürze: index.md
+  - Über mich: about.md
+  - Kompetenzen: skills.md
+  - Erfahrung: experience.md
+  - Projekte: projects.md
+  - Kontakt: contact.md
+  - Testseite: test.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins: []
