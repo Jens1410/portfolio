@@ -8,24 +8,55 @@ Meine Schwerpunkte liegen auf moderner Dokumentation, Informationsarchitektur un
   </div>
 </div>
 
+<!--## Test PDF-Aufruf
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF Viewer Test</title>
+</head>
+<body>
+  <h2>Test: Google Viewer-Link mit Seitenangabe</h2>
+  <p>
+    <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Jens1410/Markdown-Playground/main/files/MasterThesis_JensAckermann.pdf#page=20&embedded=true" target="_blank">
+      📄 Master-Thesis: Kap. 6, Seite 20 (Google Viewer)
+    </a>
+  </p>
+  <p>
+    <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Jens1410/Markdown-Playground/main/files/MasterThesis_JensAckermann.pdf#page=10&embedded=true" target="_blank">
+      📄 Master-Thesis: Kap. 4, Seite 10 (Google Viewer)
+    </a>
+  </p>
+  <p>
+    <a href="../files/MasterThesis_JensAckermann.pdf#page=20&embedded=true" target="_blank">
+      📄 Master-Thesis: Kap. 6, Seite 20 (Google Viewer)
+    </a>
+  </p>
+  <p>
+    <a href="../files/MasterThesis_JensAckermann.pdf#page=10&embedded=true" target="_blank">
+      📄 Master-Thesis: Kap. 4, Seite 10 (Google Viewer)
+    </a>
+  </p>
+</body>
+</html>-->
+
 ## Analyse & Architektur
 
 !!! tip "Tätigkeitsanalyse (2008/2009)"
-    **Motivation und Ziel:** 
-    Nutzerzentrierte und aufgabenorientierte Dokumentation für DDScad, welche die realen Arbeitsprozesse der Zielgruppe berücksichtigt
+    Für **Nutzerzentrierte und aufgabenorientierte Dokumentation** ist die Kenntnis der Zielgruppe, ihrer Aufgaben und typischen Abläufe besonders wichtig, wenn die zu dokumentierende Software ein wesentlicher Handlungsraum für die Ausübung der Tätigkeit ist. Eine systematische Tätigkeitsanalyse schafft dazu wichtige Voraussetzungen.
 
-    ??? abstract "Schritt 1 - Theoriegeleitete Erhebung und Auswertung"
+    ??? step "Schritt 1 - Theoriegeleitete Erhebung und Auswertung"
 
         **Methode**
 
-        Theoriegeleitete Erhebung und Auswertung (10 leitfaden-gestützte narrative Interviews mit Elektroplaner:innen): Die Tätigkeitstheorie (Leontjew) war die Basis zur Analyse von Handlungsstrukturen. Das Modell vom Tätigkeitssystem (Engeström) bildet das Gerüst zur Berücksichtigung äußerer Impulse auf Handlungen der Zielgruppenangehörigen. 
+        Im Rahmen meine Master-Thesis führte ich 10 leitfaden-gestützte narrative Interviews mit Angehörigen der Zielgruppe in Planungsbüros für Elektrotechnik durch. Fragestellungen, Datenverarbeitung und Auswertung waren geleitet durch theoretische Grundlagen, insbesondere die Tätigkeitstheorie (Leontjew) als Basis zur Analyse von Handlungsstrukturen. Das Modell vom Tätigkeitssystem (Engeström) bildet das Gerüst zur Berücksichtigung äußerer Impulse auf Handlungen der Zielgruppenangehörigen. 
 
         **Ergebnisse**
 
-        Rekonstruktion der Tätigkeit der Zielgruppe als kohärente Beschreibung, welche
+        Im Ergebnis gelangte ich zu einer Rekonstruktion der Tätigkeit der Zielgruppe als kohärente Beschreibung, welche
 
-        - die Struktur der Tätigkeit (Aufgaben, Anforderungen, kritische Momente, typische Handlungen) abbildet
-        - als Grundlage für die nachfolgende Prozessanalyse dient
+        - die Struktur der Tätigkeit (Aufgaben, Anforderungen, kritische Momente, typische Handlungen) abbildet.
+        - als Grundlage für die nachfolgende Prozessanalyse dient.
 
         **Nachweis/Beispiel**
 
@@ -37,6 +68,7 @@ Meine Schwerpunkte liegen auf moderner Dokumentation, Informationsarchitektur un
             
             <embed src="../files/01_Beleg_MasterThesis_Auszug_TabellarischeAnalyse.pdf" type="application/pdf" width="100%" height="600px" />
 
+    
     ??? abstract "Schritt 2 - Tabellarische Prozessanalyse"
 
         **Methode**

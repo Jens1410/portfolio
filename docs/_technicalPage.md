@@ -20,3 +20,11 @@ venv\Scripts\activate.bat
 
 ## Server für Live-Reload starten
 mkdocs serve --livereload
+
+## proxy für ngrok starten
+python proxy.py
+
+## ngrok starten
+ngrok start portfolio
+
+

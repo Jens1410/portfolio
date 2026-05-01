@@ -1,0 +1,85 @@
+img.shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35) !important;
+}
+
+
+img.border {
+  border: 2px solid rgba(0, 0, 0, 0.4) !important;
+}
+
+img.rounded {
+  border-radius: 12px !important;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.zoom {
+  cursor: zoom-in;
+}
+
+img.zoom:active {
+  transform: scale(1.5);
+}
+
+/* Äußere Umrandung des gesamten aufklappbaren Bereichs (dunkles Grau) */
+.md-typeset details {
+    border-color: #888888 !important; /* Dunkelgrau */
+    border-width: 1px !important;
+    border-radius: 4px !important;
+}
+
+/* Pfeil (Expander-Icon) in Dunkelgrau */
+.md-typeset summary::after {
+    color: #888888 !important; /* Dunkelgrau */
+}
+
+/* Entferne das Icon vor dem Titel */
+.md-typeset details > summary::before {
+    display: none !important;
+}
+
+/* Hintergrundfarbe für den Titel (Grau) */
+.md-typeset details > summary {
+    background-color: #f0f0f0 !important; /* Hellgrau */
+    border-color: #888888 !important; /* Dunkelgrau */
+    color: #333333 !important;
+}
+
+/* Hintergrundfarbe für den Inhalt (Weiß) */
+.md-typeset details > div.md-typeset {
+    background-color: #ffffff !important;
+    border-color: #888888 !important; /* Dunkelgrau */
+}
+
+/* Optional: Abstand nach dem Titel */
+.md-typeset details > summary {
+    padding-left: 0.5em !important;
+}
+
+/* Tip-Admonition (Blöcke mit !!! tip) in Blau */
+.md-typeset .admonition.tip {
+    border-color: #3498db !important; /* Blau */
+    background-color: #ffffff !important; /* Hellblau */
+}
+
+/* Titel des Tip-Blocks in Blau */
+.md-typeset .admonition.tip .admonition-title {
+    background-color: #2980b9 !important; /* Blau */
+    color: #ffffff !important; /* Weißer Text */
+    border-color: #2980b9 !important; /* Dunkelblau */
+}
+
+/* Optional: Pfeil/Icon für Tip-Blöcke in Blau */
+.md-typeset .admonition.tip .admonition-title::after {
+    color: #ffffff !important; /* Weiß, um es vom Hintergrund abzuheben */
+}
+
+/* Icon in Admonitions in Weiß */
+.md-content .admonition .admonition-title::before {
+    filter: brightness(0) saturate(100%) invert(100%) !important;
+    color: #ffffff !important;
+}

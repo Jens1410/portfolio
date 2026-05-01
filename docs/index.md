@@ -5,7 +5,7 @@
   <div>
 
 Ich bin Technical Writer und Information Architect mit Schwerpunkt auf klarer, modularer und wartbarer Dokumentation.  
-Ich verbinde technische Präzision, strukturiertes Denken und moderne Tools wie Markdown, Git, VS Code und MkDocs.
+Ich verbinde technische Präzision, strukturiertes Denken und moderne Tools.
 
   </div>
 </div>
