@@ -1,6 +1,9 @@
 site_name: Jens Ackermann – Portfolio
 site_description: Persönliches Portfolio von Jens Ackermann – Technical Writer & Information Architect
 site_author: Jens
+site_url: https://jens1410.github.io/portfolio/
+
+repo_url: https://github.com/Jens1410/portfolio
 
 theme:
   name: material

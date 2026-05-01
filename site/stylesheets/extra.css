@@ -1,85 +1,190 @@
-img.shadow {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35) !important;
+/* ---------------------------------------------------------
+   GLOBAL COLORS (neutral + petrol accent)
+--------------------------------------------------------- */
+
+:root {
+  --md-primary-fg-color: #2f4f4f !important;   /* Dark Slate / Petrol */
+  --md-accent-fg-color: #4f6f6f !important;    /* Soft Petrol */
+  --md-default-bg-color: #ffffff !important;
+  --md-default-fg-color: #222 !important;
 }
 
-
-img.border {
-  border: 2px solid rgba(0, 0, 0, 0.4) !important;
+/* Überschriften */
+.md-typeset h1, 
+.md-typeset h2, 
+.md-typeset h3, 
+.md-typeset h4 {
+  color: #2f4f4f !important;
+  font-weight: 600 !important;
 }
 
-img.rounded {
-  border-radius: 12px !important;
+/* Absatzabstand */
+.md-typeset p {
+  margin-bottom: 0.7rem !important;
 }
 
-img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* ---------------------------------------------------------
+   BILDER (wie Variante A)
+--------------------------------------------------------- */
 
-img.zoom {
-  cursor: zoom-in;
-}
+img.shadow { box-shadow: 0 0 20px rgba(0, 0, 0, 0.35) !important; }
+img.border { border: 2px solid rgba(0, 0, 0, 0.4) !important; }
+img.rounded { border-radius: 12px !important; }
+img.center { display: block; margin-left: auto; margin-right: auto; }
+img.zoom { cursor: zoom-in; }
+img.zoom:active { transform: scale(1.5); }
 
-img.zoom:active {
-  transform: scale(1.5);
-}
+/* ---------------------------------------------------------
+   DETAILS-BLÖCKE 
+--------------------------------------------------------- */
 
-/* Äußere Umrandung des gesamten aufklappbaren Bereichs (dunkles Grau) */
 .md-typeset details {
-    border-color: #888888 !important; /* Dunkelgrau */
-    border-width: 1px !important;
-    border-radius: 4px !important;
+  border: 1px solid #888888 !important;
+  border-radius: 4px !important;
+  margin: 1rem 0 !important;
+  padding: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-/* Pfeil (Expander-Icon) in Dunkelgrau */
-.md-typeset summary::after {
-    color: #888888 !important; /* Dunkelgrau */
+.md-typeset details > summary {
+  background: #e6e6e6 !important;
+  color: #575757 !important;
+  margin: 0 !important;  
+  padding: 0.35rem !important;  
+  font-weight: 600 !important;
+  list-style: none !important;
+  cursor: pointer;
 }
 
-/* Entferne das Icon vor dem Titel */
+/* Icons entfernen */
+.md-typeset details > summary::after {
+  color: #575757 !important;
+}
 .md-typeset details > summary::before {
-    display: none !important;
+  display: none !important;
+  color: #575757 !important;
 }
 
-/* Hintergrundfarbe für den Titel (Grau) */
-.md-typeset details > summary {
-    background-color: #f0f0f0 !important; /* Hellgrau */
-    border-color: #888888 !important; /* Dunkelgrau */
-    color: #333333 !important;
+.md-typeset details > *:not(summary) {
+  padding: 0.5rem !important;  
+  border-top: 0px solid #9a9a9a !important;
 }
 
-/* Hintergrundfarbe für den Inhalt (Weiß) */
-.md-typeset details > div.md-typeset {
-    background-color: #ffffff !important;
-    border-color: #888888 !important; /* Dunkelgrau */
+/* Listenabstände innerhalb von Details-Blöcken */
+.md-typeset details ul,
+.md-typeset details ol {
+  margin-top: 0.25em !important;
+  margin-bottom: 0.25em !important;
 }
 
-/* Optional: Abstand nach dem Titel */
-.md-typeset details > summary {
-    padding-left: 0.5em !important;
+/* Falls Absatz direkt vor Liste steht */
+.md-typeset details p + ul,
+.md-typeset details p + ol {
+  margin-top: 0.25em !important;
 }
 
-/* Tip-Admonition (Blöcke mit !!! tip) in Blau */
-.md-typeset .admonition.tip {
-    border-color: #3498db !important; /* Blau */
-    background-color: #ffffff !important; /* Hellblau */
+/* ---------------------------------------------------------
+   ADMONITIONS 
+--------------------------------------------------------- */
+
+.md-typeset .admonition {
+  border: 1px solid #999 !important;
+  border-radius: 4px !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-/* Titel des Tip-Blocks in Blau */
-.md-typeset .admonition.tip .admonition-title {
-    background-color: #2980b9 !important; /* Blau */
-    color: #ffffff !important; /* Weißer Text */
-    border-color: #2980b9 !important; /* Dunkelblau */
+.md-typeset .admonition-title {
+  background: #a5a5a5 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid #0e0e0e !important;
+  padding-left: 0.9em !important;
 }
 
-/* Optional: Pfeil/Icon für Tip-Blöcke in Blau */
-.md-typeset .admonition.tip .admonition-title::after {
-    color: #ffffff !important; /* Weiß, um es vom Hintergrund abzuheben */
+/* Icons entfernen */
+.md-typeset .admonition-title::before {
+  display: none !important;
 }
 
-/* Icon in Admonitions in Weiß */
-.md-content .admonition .admonition-title::before {
-    filter: brightness(0) saturate(100%) invert(100%) !important;
-    color: #ffffff !important;
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4,
+[data-md-color-scheme="slate"] .md-typeset h5,
+[data-md-color-scheme="slate"] .md-typeset h6 {
+  color: #ffffff !important;
+}
+
+/* Listenabstand */
+.md-typeset p + ul,
+.md-typeset p + ol {
+  margin-top: 0 !important;
+}
+
+.md-typeset .admonition.step p + ul,
+.md-typeset .admonition.step p + ol,
+.md-typeset .admonition.step p + .md-typeset__scrollwrap ul,
+.md-typeset .admonition.step p + .md-typeset__scrollwrap ol {
+  margin-top: 0 !important;
+}
+
+/* ---------------------------------------------------------
+   PDF-EINBETTUNGEN
+--------------------------------------------------------- */
+
+iframe,
+embed {
+  border: 1px solid #4f6f6f !important;
+  border-radius: 4px !important;
+  margin: 1rem 0 !important;
+}
+
+/* ---------------------------------------------------------
+   MODAL (wie Variante A, aber mit Petrol-Rahmen)
+--------------------------------------------------------- */
+
+.pdf-modal {
+  display: none;
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(2px);
+  z-index: 99999 !important;
+}
+
+.pdf-modal-content {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 80vw !important;
+  height: 80vh !important;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid #4f6f6f !important;
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  z-index: 100000 !important;
+}
+
+.pdf-modal-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pdf-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #2f4f4f;
+  z-index: 100001;
 }
