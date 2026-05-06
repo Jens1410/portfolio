@@ -2,8 +2,7 @@
   <img src="../img/Jens.jpg" width="180" class="shadow" style="flex-shrink: 0;" alt="Mein Profilbild – Technischer Writer & Information Architect" />
   <div>
 
-Ich arbeite an der Schnittstelle von Technik, Struktur und Kommunikation.  
-Meine Schwerpunkte liegen auf moderner Dokumentation, Informationsarchitektur und klaren, wartbaren Workflows. Die Seite zeigt meine methodischen, technischen und konzeptionellen Kompetenzen aus 30 Jahren Arbeit an DDScad und angrenzenden Projekten.
+Die folgenden Beispiele zeigen meine Arbeitsweise im Bereich technische Dokumentation, Informationsarchitektur und moderne Dokumentationsprozesse.
 
   </div>
 </div>
